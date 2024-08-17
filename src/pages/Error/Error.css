@@ -1,0 +1,37 @@
+.error {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+}
+
+.numberError {
+      color: #FF6060;
+      font-size: 288px;
+      text-align: center;
+      margin: 0px;
+}
+
+.msgError {
+      color: #FF6060;
+      font-size: 36px;
+}
+
+.linkError {
+      padding: 100px 0px;
+      color: black;
+}
+
+@media screen and (max-width: 1040px) {
+      .numberError {
+            margin: 50px 0px;
+            font-size: 120px;
+            font-weight: 700;
+      }
+
+      .msgError {
+            text-align: center;
+            font-size: 26px;
+            width: 90%;
+      }
+}

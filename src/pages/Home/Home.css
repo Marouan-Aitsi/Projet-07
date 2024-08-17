@@ -1,0 +1,21 @@
+.list {
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+      height: 100%;
+      justify-content: center;
+      background-color: #F6F6F6;
+      margin: 10px 0px 50px 0px;
+      border-radius: 25px;
+      padding: 50px 0px;
+      gap: 75px;
+}
+
+@media screen and (max-width: 1240px) {
+      .list {
+            margin-top: 0px;
+            background-color: white;
+            padding: 10px 0px;
+            gap: 30px;
+      }
+}

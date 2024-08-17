@@ -1,0 +1,41 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    height: 68px;
+    padding: 20px 0px;
+}
+
+.header img {
+    padding-top: 10px;
+}
+
+.headerLink {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 100%;
+    gap: 50px;
+}
+
+.headerLink a {
+    font-size: 24px;
+    text-decoration: none;
+    color: black;
+    border-bottom: 2px solid transparent;
+}
+
+.headerLink a:hover {
+    border-bottom: 2px solid black;
+}
+
+@media screen and (max-width: 1040px) {
+    .headerLink {
+        gap: 20px;
+    }
+
+    .headerLink a {
+        font-size: 18px;
+        text-align: center;
+        padding-top: 15px;
+    }
+}

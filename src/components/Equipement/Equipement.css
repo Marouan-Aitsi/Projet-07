@@ -1,0 +1,44 @@
+.divEquip {
+      width: 45%;
+}
+
+.buttonEquipement {
+      display: flex;
+      width: 100%;
+      color: white;
+      background-color: #FF6060;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 18px;
+      border-radius: 10px;
+      border: none;
+      padding: 10px;
+}
+
+.equipement-content {
+      overflow: hidden;
+      transition: height 0.3s ease-out;
+      border: 0px solid #F6F6F673;
+      border-radius: 10px;
+      margin-bottom: 10px;
+      width: 100%;
+}
+
+.content {
+      padding: 10px;
+}
+
+.arrowDown {
+      transform: rotate(0deg)
+}
+
+.arrowUp {
+      transform: rotate(180deg)
+}
+
+
+@media screen and (max-width: 1040px) {
+      .divEquip {
+            width: 100%;
+      }
+}

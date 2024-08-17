@@ -1,0 +1,58 @@
+.banner {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 50px 0px;
+      width: 100%;
+}
+
+.banner::before {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 69%;
+      bottom: 50px;
+      z-index: 1;
+      border-radius: 25px;
+      background-color: black;
+      opacity: 0.4;
+}
+
+.banner img {
+      width: 100%;
+      height: 223px;
+      object-fit: cover;
+      border-radius: 25px;
+}
+
+.banner p {
+      position: absolute;
+      color: white;
+      font-size: 48px;
+      font-weight: 700;
+      text-align: center;
+      width: 80%;
+      z-index: 2;
+}
+
+@media screen and (max-width: 740px) {
+      .banner {
+            padding: 20px 0px;
+      }
+
+      .banner img {
+            height: 111px;
+      }
+
+      .banner p {
+            font-size: 24px;
+            text-align: left;
+            padding-left: 10px;
+      }
+
+      .banner::before {
+            bottom: 22px;
+            height: 73%;
+      }
+}

@@ -1,0 +1,54 @@
+.caroussel {
+      width: 100%;
+      height: 415px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      border-radius: 10px;
+}
+
+.vector {
+      position: absolute;
+      z-index: 1;
+      right: 40px;
+      bottom: 160px;
+}
+
+.vector_2 {
+      position: absolute;
+      z-index: 1;
+      left: 40px;
+      bottom: 160px;
+      transform: rotate(180deg)
+}
+
+.imgCaroussel {
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+      border-radius: 10px;
+}
+
+.indicator {
+      position: absolute;
+      display: flex;
+      justify-self: center;
+      bottom: 20px;
+      font-size: 18px;
+      color: white;
+}
+
+@media screen and (max-width: 1040px) {
+      .vector {
+            right: 20px;
+            width: 24px;
+            bottom: 180px;
+      }
+
+      .vector_2 {
+            left: 20px;
+            width: 24px;
+            bottom: 180px;
+      }
+}
