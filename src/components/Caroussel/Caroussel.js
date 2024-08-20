@@ -16,14 +16,21 @@ function Carrousel({ pictures }) {
 
       return (
             <div className='caroussel'>
-                  <img src={Vector} alt='Vector' className='vector' onClick={handleNext} />
+                  {pictures.length > 1 && (
+                        <img src={Vector} alt='Vector' className='vector' onClick={handleNext} />
+                  )}
                   <img className="imgCaroussel" src={pictures[index]} alt="carrouselImg" />
-                  <img src={Vector} alt='Vector' className='vector_2' onClick={handlePrevious} />
-                  <div className='indicator'>
-                        {index + 1}/{pictures.length}
-                  </div>
+                  {pictures.length > 1 && (
+                        <img src={Vector} alt='Vector' className='vector_2' onClick={handlePrevious} />
+                  )}
+                  {pictures.length > 1 && (
+                        <div className='indicator'>
+                              {index + 1}/{pictures.length}
+                        </div>
+                  )}
             </div>
       );
 };
 
 export default Carrousel;
+
